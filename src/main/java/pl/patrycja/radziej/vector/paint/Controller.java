@@ -13,10 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import pl.patrycja.radziej.vector.paint.io.SDAFileReader;
-import pl.patrycja.radziej.vector.paint.shapes.Line;
-import pl.patrycja.radziej.vector.paint.shapes.Rectangle;
-import pl.patrycja.radziej.vector.paint.shapes.Shape;
-import pl.patrycja.radziej.vector.paint.shapes.Triangle;
+import pl.patrycja.radziej.vector.paint.shapes.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -132,6 +129,12 @@ public class Controller {
                 return new Rectangle(startX, startY, endX, endY);
             case TRIANGLE:
                 return new Triangle(startX, startY, endX, endY);
+            case ELLIPSE:
+                return new Ellipse(startX, startY, endX, endY);
+            case CIRCLE:
+                return new Circle(startX, startY, endX, endY);
+            case STAR:
+                return new Star(startX, startY, endX, endY);
         }
     }
 

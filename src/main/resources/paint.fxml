@@ -38,7 +38,7 @@
         </HBox>
       </bottom>
       <center>
-        <Canvas fx:id="canvas" blendMode="SRC_OVER" height="400.0" scaleX="0.98" scaleY="1.2985000495910646" width="700.0" />
+        <Canvas fx:id="canvas" height="400.0" width="700.0" />
       </center>
       <left>
         <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
