@@ -82,7 +82,7 @@ public class Controller {
                 endY = event.getY();
                 System.out.printf("dragged x=%f y=%f \n", endX, endY);
                 prepareShape();
-   //             applyShape(); //to żeby caly czas rysowało
+                applyShape(); //to żeby caly czas rysowało
                 refreshCanvas();
             }
         });
